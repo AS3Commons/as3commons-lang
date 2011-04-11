@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <properties>
+        <title>Welcome to as3commons-lang</title>
+        <author email="mp@yoolab.com">Martino Piccinato</author>
+    </properties>
+    <body>
+        <section name="Welcome to as3-commons-lang">
+            
+            <div id="downloadbox">
+                <h5>Get latest stable</h5>
+                <p>
+                    <a href="https://dev.yoolab.org/maven/content/repositories/releases/org/as3commons/as3commons-lang/0.3.2/as3commons-lang-0.3.2.swc">
+                        <img valign="top" src="images/folder-open.gif" border="0" alt="Download latest stable" title="download"/>
+                        Download
+                    </a>
+                    latest stable (0.3.2)
+                </p>
+                <br/>
+                <h5>Get lastest development snapshot</h5>
+                <p>
+                    <a href="downloads/as3commons-lang-latest-snapshot-bin.zip">
+                        <img valign="top" src="images/folder-open.gif" border="0" alt="Download latest snapshot" title="download"/>
+                        Download
+                    </a>
+                    latest snapshot
+                </p>
+            </div>
+
+            <p>
+                AS3Commons-lang is an open-source library providing utilities and language
+				extensions for ActionScript 3.0. Being a pure actionscript library it can 
+                be used for any Flash/Flex/AIR project.
+            </p>
+
+        </section>
+
+    </body>
+</document>
+

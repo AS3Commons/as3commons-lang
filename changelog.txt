@@ -1,0 +1,66 @@
+AS3COMMONS LANG CHANGELOG
+=========================
+
+Note: dates are in DD.MM.YYYY format
+
+Changes in version 0.3.2 (30.01.2010)
+-----------------------------------
+
+Package org.commons.lang
+
+* Added isInformalImplementationOf() method to ClassUtils (Thanks Zachary)
+* Added getClassParameterFromFullyQualifiedName() method to ClassUtils
+
+
+Changes in version 0.3.2 (31.10.2010)
+-------------------------------------
+
+Package org.as3commons.lang
+
+* fixed an issue with handling of DST
+
+
+Changes in version 0.3.1 (31.10.2010)
+-------------------------------------
+
+Package org.as3commons.lang
+
+* changed internal string to array in StringBuffer
+* added CloneUtils
+
+
+Changes in version 0.3 (29.08.2010)
+-----------------------------------
+
+Package org.as3commons.lang
+
+* added static ClassUtils.isPrivateClass() method and associated unit tests
+* added static Assert.notAbstract() method and associated unit tests
+* added IIterator interface
+* added ObjectIterator implementation
+* added static ObjectUtils.getIterator() method and associated unit tests
+* added INamed interface
+* added HashArray class
+
+
+Changes in version 0.2.1 (24.03.2010)
+-------------------------------------
+
+Package org.as3commons.lang
+* issue 15 - fixed equals and equalsIgnoreCase methods
+* added DateUtils and DateUtilsTest (Thanks James Ghandour!)
+
+
+Changes in version 0.2 (23.11.2009)
+-----------------------------------
+
+Package org.as3commons.lang
+* added optional ApplicationDomain argument to ClassUtils methods
+* added SoftReference class for holding soft/weak references to objects, used by the Type class to hold a reference to its ApplicationDomain
+
+
+Changes in version 0.1 (12.09.2009)
+-----------------------------------
+
+General
+* initial release

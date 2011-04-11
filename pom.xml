@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<groupId>org.as3commons</groupId>
+		<artifactId>basepom</artifactId>
+		<version>1</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>as3commons-lang</artifactId>
+	<packaging>swc</packaging>
+	<version>0.3.3-SNAPSHOT</version>
+	<name>AS3Commons Lang</name>
+	<url>http://code.google.com/p/as3-commons</url>
+	<description>
+			Utilities and language extensions for ActionScript 3.0
+	</description>
+	<inceptionYear>2009</inceptionYear>
+
+	<build>
+
+		<plugins>
+
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptor>
+						src/main/assembly/package.xml
+					</descriptor>
+					<finalName>as3commons-lang-latest-snapshot</finalName>
+					<outputDirectory>target/site/downloads</outputDirectory>
+					<workDirectory>target/assembly/work</workDirectory>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id> <!-- this is used for inheritance merges -->
+						<phase>site</phase> <!-- append to the packaging phase. -->
+						<goals>
+							<goal>single</goal> <!-- goals == mojos -->
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<tagBase>
+						https://as3-commons.googlecode.com/svn/tags/as3-commons-lang
+					</tagBase>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>src/main/actionscript</directory>
+							<includes>
+								<include>FlexUnitApplication.mxml</include>
+							</includes>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+
+		</plugins>
+
+	</build>
+
+	<scm>
+		<developerConnection>scm:svn:https://as3-commons.googlecode.com/svn/trunk/as3-commons-lang</developerConnection>
+		<url>scm:svn:http://as3-commons.googlecode.com/svn/trunk/as3-commons-lang</url>
+	  <connection>scm:svn:http://as3-commons.googlecode.com/svn/as3commons-lang</connection>
+  </scm>
+
+	<distributionManagement>
+		<site>
+			<id>yoolab.org-as3commons</id>
+			<url>scp://www.as3commons.org/srv/www/yoolab/www.as3commons.org/public_html/as3-commons-lang</url>
+		</site>
+	</distributionManagement>
+
+</project>
